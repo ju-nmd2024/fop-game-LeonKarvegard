@@ -39,7 +39,7 @@ function gameScreen(){ //setting up the gameScreen
 
     pig(200, y, 0.4);
 }
-function LosingScreen(){ //setting up the resultScreen in case of a lost game
+function losingScreen(){ //setting up the resultScreen in case of a lost game
     background(135,206,235);
 
     push ();
@@ -53,7 +53,7 @@ function LosingScreen(){ //setting up the resultScreen in case of a lost game
     
 }
 
-function WinningScreen(){ //setting up the resultScreen in case of a won game
+function winningScreen(){ //setting up the resultScreen in case of a won game
     background(135,206,235);
 
 
@@ -161,13 +161,13 @@ function draw(){                //making an if, to make sure that the gamescreen
         
 
     } else if (state === "resultLoss") {            //making sure you get to the lossScreen when you lose the game
-        LosingScreen();
+        losingScreen();
         y = 1;
         velocity = 0;
         acc = 0;
 
     } else if (state === "resultWin") {             //making sure you get to the winScreen when you Win the game
-        WinningScreen();
+        winningScreen();
         y = 1;
         velocity = 0;
         acc = 0;
